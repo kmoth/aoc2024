@@ -69,9 +69,9 @@ yarn start 1
 
 ```
 Day 01
-Time part 1: 1.667ms
-Time part 2: 35.598ms
-Both parts: 37.265ms
+Time part 1: 0.741ms
+Time part 2: 8.478ms
+Both parts: 9.219ms
 ```
 
 ```
@@ -83,9 +83,9 @@ Both parts: 8.367ms
 
 ```
 Day 03
-Time part 1: 1.281ms
-Time part 2: 1.176ms
-Both parts: 2.457ms
+Time part 1: 1.15ms
+Time part 2: 0.992ms
+Both parts: 2.142ms
 ```
 
 ```
@@ -244,7 +244,7 @@ Both parts: -
 
 ```
 Total stars: 6/50
-Total time: 48.089ms
+Total time: 19.728ms
 ```
 
 <!--/RESULTS-->

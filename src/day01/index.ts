@@ -27,10 +27,10 @@ const part1 = (rawInput: string) => {
 
 const part2 = (rawInput: string) => {
   const { left, right } = parseInput(rawInput)
-  left
-  right
+  const cache = {}
   return left.reduce((acc, curr, index) => {
-    return acc + (right.filter(r => r === curr).length * curr)
+    cache[curr] ??= right.filter(r => r === curr).length
+    return acc + (cache[curr] * curr)
   }, 0).toString()
 }
 
