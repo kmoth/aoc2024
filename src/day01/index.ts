@@ -26,8 +26,8 @@ const part1 = (rawInput: string) => {
 }
 
 const part2 = (rawInput: string) => {
-  const { left, right } = parseInput(rawInput)
   const cache = {}
+  const { left, right } = parseInput(rawInput)
   return left.reduce((acc, curr, index) => {
     cache[curr] ??= right.filter(r => r === curr).length
     return acc + (cache[curr] * curr)

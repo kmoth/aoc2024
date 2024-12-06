@@ -48,17 +48,17 @@ const isSafeLevel = (input: number[]) => {
 }
 
 const part1 = (rawInput: string) => {
-  const input = parseInput(rawInput)
-  return input.reduce((acc, curr) => {
-    return acc + (levelSafety(curr, false) ? 1 : 0)
-  }, 0).toString()
+  return parseInput(rawInput)
+    .reduce((acc, curr) => {
+      return acc + (levelSafety(curr, false) ? 1 : 0)
+    }, 0).toString()
 }
 
 const part2 = (rawInput: string) => {
-  const input = parseInput(rawInput)
-  return input.reduce((acc, curr) => {
-    return acc + (levelSafety(curr, false) || isSafeLevel(curr) ? 1 : 0)
-  }, 0).toString()
+  return parseInput(rawInput)
+    .reduce((acc, curr) => {
+      return acc + (levelSafety(curr, false) || isSafeLevel(curr) ? 1 : 0)
+    }, 0).toString()
 }
 
 run({
